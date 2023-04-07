@@ -3,13 +3,16 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 :root {
     --primary: #1c448e;
     --secondary: #e7eefa;
 }
-
+section {
+    padding-top: 3em;
+}
 .container{
     display: flex;
     gap: 1em;
@@ -45,29 +48,39 @@ width: 200px;
 .sobre_min {
     max-width: 900px;
     margin: auto;
-    padding-top: 3em;
 }
 .sobre_min h2 {
     margin-bottom: .5em;
     font-size: 1.5em;
 }
-.resumo p {
-    width: 75%;
+.resumo  {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+.resumo img {
+    width: 45%;
+}
+.resumo p{
+    font-size: 1em;
 }
 .resumo button {
     background-color: var(--primary);
+    color: #fff;
+    cursor: pointer;
     padding: .8em 1.2em;
     font-size: 15px;
-    margin: 1.6em 0;
+    margin-top: 3em;
     border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
 }
-.resumo button a {
-    color: #fff;
-}
+
+
 .habilidades{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.6em;
+    flex-wrap: wrap;
 }
 .habilidades div {
 flex-basis: 25%;
@@ -75,9 +88,17 @@ border: 1px solid #000;
 border-radius: 5px;
 padding: .8em;
 background-color: #dcdcdc;
+margin: .8em;
+cursor: context-menu;
+box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.349);
+transition: all 0.3s ease-in-out;
+}
+.habilidades div:hover {
+    transform: scale(1.1);
 }
 .habilidades img {
     margin-bottom: 1.7em;
+    height: 100px;
 }
 .zap {
     color: #128C7E;
@@ -91,7 +112,7 @@ footer {
 footer p {
     text-align: center;
 }
-@media (max-width: 500px)  {
+@media (max-width: 900px)  {
     .container {
         display: block;
     }
@@ -104,14 +125,16 @@ footer p {
     .sobre_min h2 {
         text-align: center;
     }
-    .resumo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .resumo  {
+        width: 70%;
+        margin: auto;
+    }
+    .resumo img{
+        display: none;
     }
     .habilidades {
         flex-direction: column;
-        gap: 1em;
+        gap: 2em;
     }
     .habilidades div {
         padding: 1.7em;
