@@ -12,6 +12,10 @@
 }
 section {
     padding-top: 3em;
+    border-top: 2px solid #000;
+}
+section:first-child {
+    border-top: none;
 }
 .container{
     display: flex;
@@ -50,19 +54,17 @@ width: 200px;
     margin: auto;
 }
 .sobre_min h2 {
-    margin-bottom: .5em;
-    font-size: 1.5em;
+    margin-bottom: 1.8em;
+    font-size: 2.4em;
 }
 .resumo  {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     gap: 1em;
-    height: 100vh;
-    
+    min-height: 100vh;
 }
 .resumo img {
-    width: 45%;
+    width: 50%;
 }
 .resumo p{
     font-size: 1em;
@@ -72,7 +74,6 @@ width: 200px;
     color: #fff;
     cursor: pointer;
     padding: .8em 1.2em;
-    font-size: 15px;
     margin-top: 3em;
     border: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
@@ -81,13 +82,12 @@ width: 200px;
 .resumo button:hover {
     transform:scale(1.1);
 }
-
-
 .habilidades{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1.6em;
     flex-wrap: wrap;
+    min-height: 100vh;
 }
 .habilidades div {
 flex-basis: 25%;
@@ -127,17 +127,19 @@ footer p {
         height: 100vh;
     }
     .sobre_min {
-        margin: 0 .5em;
+        margin: 0 .8em;
     }
     .sobre_min h2 {
         text-align: center;
     }
-    .resumo  {
-        width: 70%;
-        margin: auto;
+    .resumo {
+        margin: 0 2em;
     }
     .resumo img{
         display: none;
+    }
+    .resumo button {
+        margin-bottom: 1.6em;
     }
     .habilidades {
         flex-direction: column;
