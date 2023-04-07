@@ -56,7 +56,10 @@ width: 200px;
 .resumo  {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     gap: 1em;
+    height: 100vh;
+    
 }
 .resumo img {
     width: 45%;
