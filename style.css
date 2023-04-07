@@ -61,13 +61,10 @@ width: 200px;
     display: flex;
     align-items: center;
     gap: 1em;
-    min-height: 100vh;
+    height: 100vh;
 }
 .resumo img {
     width: 50%;
-}
-.resumo p{
-    font-size: 1em;
 }
 .resumo button {
     background-color: var(--primary);
@@ -139,7 +136,7 @@ footer p {
         display: none;
     }
     .resumo button {
-        margin-bottom: 1.6em;
+        margin-bottom: 3em;
     }
     .habilidades {
         flex-direction: column;
