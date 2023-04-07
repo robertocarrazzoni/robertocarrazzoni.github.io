@@ -73,6 +73,10 @@ width: 200px;
     margin-top: 3em;
     border: none;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    transition: all .3s ease-in-out;
+}
+.resumo button:hover {
+    transform:scale(1.1);
 }
 
 
@@ -134,11 +138,14 @@ footer p {
     }
     .habilidades {
         flex-direction: column;
+        align-items: stretch;
         gap: 2em;
+        width: 80%;
+        margin: 0 auto;
     }
     .habilidades div {
         padding: 1.7em;
-        margin: auto;
+        
     }
     
     
